@@ -1,14 +1,14 @@
 <script setup lang="ts">
-defineProps({
-  type:{
-    type:String,
-    default: ''
-  }
-});
+  defineProps({
+    type: {
+      type: String,
+      default: '',
+    },
+  })
 </script>
 
 <template>
-  <input>
-    <slot />
-  </input>
+  <Input :type="type">
+    <slot></slot>
+  </Input>
 </template>
